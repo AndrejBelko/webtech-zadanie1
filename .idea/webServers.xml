@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="35fef9b8-584c-47ec-ae60-11a9554d3931" name="webte1">
+        <fileTransfer rootFolder="/home/xbelkoa/public_html" accessType="SFTP" host="webte1.fei.stuba.sk" port="22" sshConfigId="19d1c3a2-11e2-4076-87c5-96450a179edd" sshConfig="xbelkoa@webte1.fei.stuba.sk:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
