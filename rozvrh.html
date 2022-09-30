@@ -3,9 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Rozvrh</title>
-    <style>
-        table,th,td{border: 1px solid black; margin: 10px; padding: 10px}
-    </style>
+    <link rel="stylesheet" href="vendor/styles.css">
 </head>
 <body>
     <header>
@@ -14,7 +12,7 @@
     <p>
         <a href="https://webte1.fei.stuba.sk/~xbelkoa/xd">Späť</a>
     </p>
-    <table>
+    <table class="timetable">
         <tr>
             <th></th>
             <th>8:00-8:50</th>
@@ -29,7 +27,7 @@
             <th>17:00-17:50</th>
         </tr>
         <tr>
-            <th>Pondelok</th>
+            <th class="day">Pondelok</th>
             <th></th>
             <th></th>
             <th></th>
@@ -42,42 +40,42 @@
             <th></th>
         </tr>
         <tr>
-            <th>Utorok</th>
-            <th colspan="2">Analýza a zložitosť algoritmov</th>
-            <th colspan="2">Operačné systémy</th>
+            <th class="day">Utorok</th>
+            <th colspan="2" class="seminar">Analýza a zložitosť algoritmov</th>
+            <th colspan="2" class="lecture">Operačné systémy</th>
             <th></th>
-            <th colspan="2">Softvérové inžinierstvo</th>
-            <th colspan="2">Webové technológie</th>
+            <th colspan="2" class="lecture">Softvérové inžinierstvo</th>
+            <th colspan="2" class="lecture">Webové technológie</th>
             <th></th>
 
         </tr>
         <tr>
-            <th>Streda</th>
+            <th class="day">Streda</th>
             <th></th>
-            <th>Softvérové inžinierstvo</th>
-            <th>Softvérové inžinierstvo</th>
-            <th colspan="2">Telesná kultúra</th>
-            <th colspan="2">Analýza a zložitosť algoritmov</th>
-            <th colspan="2">Webové technológie</th>
+            <th class="lecture">Softvérové inžinierstvo</th>
+            <th class="seminar">Softvérové inžinierstvo</th>
+            <th colspan="2" class="lecture">Telesná kultúra</th>
+            <th colspan="2" class="lecture">Analýza a zložitosť algoritmov</th>
+            <th colspan="2" class="lecture">Webové technológie</th>
             <th></th>
 
         </tr>
         <tr>
-            <th>Štvrtok</th>
-            <th colspan="2">Webové technológie</th>
+            <th class="day">Štvrtok</th>
+            <th colspan="2" class="seminar">Webové technológie</th>
             <th></th>
             <th></th>
-            <th>Operačné systémy</th>
-            <th>Operačné systémy</th>
+            <th class="lecture">Operačné systémy</th>
+            <th class="seminar">Operačné systémy</th>
             <th></th>
             <th></th>
             <th></th>
             <th></th>
         </tr>
         <tr>
-            <th>Piatok</th>
+            <th class="day">Piatok</th>
             <th></th>
-            <th>Analýza a zložitosť algoritmov</th>
+            <th class="seminar">Analýza a zložitosť algoritmov</th>
             <th></th>
             <th></th>
             <th></th>

@@ -1,0 +1,21 @@
+.timetable{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.timetable th,td{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.day{
+    background-color: cyan;
+}
+
+.seminar{
+    background-color: limegreen;
+}
+
+.lecture{
+    background-color: orangered;
+}
