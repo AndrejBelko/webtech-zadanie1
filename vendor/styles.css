@@ -1,15 +1,24 @@
+@font-face {
+    font-family: CroissantOne;
+    src: url("CroissantOne-Regular.ttf");
+}
+
 body{
+    font-family: CroissantOne, serif;
     display: grid;
-    grid-template-columns: 10% auto;
+    grid-template-columns: auto;
     border: 1px solid black;
+    text-align: center;
     grid-template-areas:
-      'myHeader myHeader'
-      'myNav myArticle'
-      'myFooter myFooter';
+      'myHeader'
+      'myNav'
+      'myArticle'
+      'myFooter';
 }
 
 aside{
     font-size: xxx-large;
+    font-weight: bolder;
 }
 
 img{
@@ -21,14 +30,19 @@ img{
     margin-right: 1%;
 }
 
+.interactive{
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .omne{
     font-size: large;
 }
 
-
 header{
     grid-area: myHeader;
-    text-align: center;
     background-color: darkblue;
     color:white;
 }
@@ -42,40 +56,59 @@ article{
 nav{
     grid-area: myNav;
     background-color: blue;
-    padding:10%;
-    color:white;
+    padding:1%;
 }
 
 .menu{
-    text-align: center;
     width: auto;
     height: auto;
+}
+
+.menu li a{
+    color:black;
+}
+
+
+.menu li a:visited{
+    color: white;
+}
+
+.menu li a:hover{
+    color: limegreen;
+}
+
+.menu li a:active{
+    color: deeppink;
 }
 
 .timetable{
     border-collapse: collapse;
     border: 1px solid black;
-    max-width: 50%;
+    max-width:78%;
     width: auto;
     height: 50%;
     margin-left: auto;
     margin-right: auto;
+    background-color: white;
 }
 
 .timetable th,td{
     border-collapse: collapse;
     border: 1px solid black;
-    text-align: center;
+    width: 6%;
 }
 
+
 .timetable .day{
-    background-color: cyan;
+    background-color: darkred;
     height: 20%;
+    color: white;
 }
 
 .timetable .time{
-    width: 10%;
-    background-color: cyan;
+    width: 6%;
+    background-color: darkred;
+    color: white;
 }
 
 .seminar{
