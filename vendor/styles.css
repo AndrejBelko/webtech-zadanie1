@@ -6,7 +6,7 @@
 body{
     background-image: url("../modern-city-skyline-backgrounds_77417-834.jpg");
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     font-family: CroissantOne, serif;
     display: grid;
     size: auto;
@@ -26,17 +26,18 @@ body{
             'cvLeft cvRight';
 }
 
+.cvimg{
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .left{
+    float: none;
     background-color: rgba(0, 255, 255, 60%);
     grid-area: cvLeft;
     margin-left: 35%;
     text-align: center;
-    place-items: center;
-}
-
-.left img{
-    margin-right: auto;
-    margin-left: auto;
 }
 
 .right{
@@ -58,7 +59,7 @@ aside{
     font-weight: bolder;
 }
 
-img{
+.ja{
     border-radius: 10px;
     max-height: initial;
     max-width: initial;
@@ -186,4 +187,17 @@ a:active{
 .subjects li{
     color:black;
     display: block;
+}
+
+footer{
+    border-radius: 10px;
+    grid-area: myFooter;
+    background-color: rgba(0,0,139,60%);
+    color:black;
+    margin-bottom: 1%;
+    text-align: center;
+}
+
+.website{
+    text-align: center;
 }
