@@ -4,28 +4,64 @@
 }
 
 body{
+    background-image: url("../modern-city-skyline-backgrounds_77417-834.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
     font-family: CroissantOne, serif;
     display: grid;
+    size: auto;
+    word-break: break-word;
     grid-template-columns: auto;
-    border: 1px solid black;
-    text-align: center;
     grid-template-areas:
       'myHeader'
       'myNav'
       'myArticle'
       'myFooter';
 }
+.cv{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 1%;
+    grid-template-areas:
+            'cvLeft cvRight';
+}
+
+.left{
+    background-color: rgba(0, 255, 255, 60%);
+    grid-area: cvLeft;
+    margin-left: 35%;
+    text-align: center;
+    place-items: center;
+}
+
+.left img{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.right{
+    padding-left: 1%;
+    background-color: rgba(50, 205, 50, 60%);
+    grid-area: cvRight;
+    margin-right: 35%;
+}
+
+.right li{
+    display: block;
+}
 
 aside{
+    float: right;
+    text-align: center;
+    width: 50%;
     font-size: xxx-large;
     font-weight: bolder;
 }
 
 img{
+    border-radius: 10px;
     max-height: initial;
     max-width: initial;
-    width: auto;
-    height: auto;
     float: left;
     margin-right: 1%;
 }
@@ -42,21 +78,28 @@ img{
 }
 
 header{
+    border-radius: 10px;
     grid-area: myHeader;
-    background-color: darkblue;
+    background-color: rgba(0,0,139,60%);
     color:white;
+    margin-bottom: 1%;
+    text-align: center;
 }
 
 article{
+    border-radius: 10px;
     grid-area: myArticle;
-    background-color: aqua;
-    padding:1%;
+    background-color: rgba(0,255,255,60%);
+    margin-bottom: 1%;
+    padding: 1%;
 }
 
 nav{
+    border-radius: 10px;
     grid-area: myNav;
-    background-color: blue;
-    padding:1%;
+    background-color: rgba(0,0,255,60%);
+    margin-bottom: 1%;
+    text-align: center;
 }
 
 .menu{
@@ -64,29 +107,36 @@ nav{
     height: auto;
 }
 
-.menu li a{
+
+li{
+    display: inline;
+    margin: 1%;
+}
+
+a{
     color:black;
 }
 
 
-.menu li a:visited{
+a:visited{
     color: white;
 }
 
-.menu li a:hover{
+a:hover{
     color: limegreen;
 }
 
-.menu li a:active{
+a:active{
     color: deeppink;
 }
 
 .timetable{
+    text-align: center;
     border-collapse: collapse;
     border: 1px solid black;
-    max-width:78%;
+    max-width:90%;
     width: auto;
-    height: 50%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
@@ -119,11 +169,21 @@ nav{
     background-color: orangered;
 }
 
+.pe{
+    background-color: yellow;
+}
+
 .explanations{
+    text-align: center;
     border: 1px solid black;
-    max-width: 10%;
+    max-width: 20%;
     width: auto;
     height: 10%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.subjects li{
+    color:black;
+    display: block;
 }
