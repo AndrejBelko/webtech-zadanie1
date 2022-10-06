@@ -8,28 +8,18 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     font-family: CroissantOne, serif;
-    display: grid;
     size: auto;
     word-break: break-word;
-    grid-template-columns: auto;
-    grid-template-areas:
-      'myHeader'
-      'myNav'
-      'myArticle'
-      'myFooter';
+    display: flex;
+    flex-direction: column;
 }
+
 .cv{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-column-gap: 1%;
     grid-template-areas:
             'cvLeft cvRight';
-}
-
-.cvimg{
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .left{
@@ -51,7 +41,7 @@ body{
     display: block;
 }
 
-aside{
+aside.quote{
     float: right;
     text-align: center;
     width: 50%;
@@ -74,13 +64,8 @@ aside{
     margin-left: auto;
 }
 
-.omne{
-    font-size: large;
-}
-
 header{
     border-radius: 10px;
-    grid-area: myHeader;
     background-color: rgba(0,0,139,60%);
     color:white;
     margin-bottom: 1%;
@@ -88,8 +73,8 @@ header{
 }
 
 article{
+    font-size: large;
     border-radius: 10px;
-    grid-area: myArticle;
     background-color: rgba(0,255,255,60%);
     margin-bottom: 1%;
     padding: 1%;
@@ -97,15 +82,10 @@ article{
 
 nav{
     border-radius: 10px;
-    grid-area: myNav;
     background-color: rgba(0,0,255,60%);
     margin-bottom: 1%;
     text-align: center;
-}
-
-.menu{
-    width: auto;
-    height: auto;
+    display: inline;
 }
 
 
@@ -133,22 +113,29 @@ a:active{
 
 .timetable{
     text-align: center;
+    font-size: medium;
     border-collapse: collapse;
     border: 1px solid black;
-    max-width:90%;
-    width: auto;
+    width: 90%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
 }
 
+.explanations{
+    text-align: center;
+    border: 1px solid black;
+    width: 20%;
+    height: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .timetable th,td{
-    border-collapse: collapse;
     border: 1px solid black;
     width: 6%;
 }
-
 
 .timetable .day{
     background-color: darkred;
@@ -157,8 +144,8 @@ a:active{
 }
 
 .timetable .time{
-    width: 6%;
     background-color: darkred;
+    width: 6%;
     color: white;
 }
 
@@ -174,24 +161,13 @@ a:active{
     background-color: yellow;
 }
 
-.explanations{
-    text-align: center;
-    border: 1px solid black;
-    max-width: 20%;
-    width: auto;
-    height: 10%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .subjects li{
-    color:black;
+    color: black;
     display: block;
 }
 
 footer{
     border-radius: 10px;
-    grid-area: myFooter;
     background-color: rgba(0,0,139,60%);
     color:black;
     margin-bottom: 1%;
@@ -201,3 +177,7 @@ footer{
 .website{
     text-align: center;
 }
+ /*
+ interaktivny obrazok:
+ on hover
+  */
