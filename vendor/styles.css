@@ -4,14 +4,14 @@
 }
 
 body{
-    background-image: url("../modern-city-skyline-backgrounds_77417-834.jpg");
-    background-repeat: no-repeat;
+    background: url("../modern-city-skyline-backgrounds_77417-834.jpg");
+    background-repeat: space;
     background-size: cover;
     font-family: CroissantOne, serif;
-    size: auto;
     word-break: break-word;
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
 .cv{
@@ -57,13 +57,6 @@ aside.quote{
     margin-right: 1%;
 }
 
-.interactive{
-    float: none;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
-
 header{
     border-radius: 10px;
     background-color: rgba(0,0,139,60%);
@@ -73,7 +66,6 @@ header{
 }
 
 article{
-    font-size: large;
     border-radius: 10px;
     background-color: rgba(0,255,255,60%);
     margin-bottom: 1%;
@@ -174,10 +166,75 @@ footer{
     text-align: center;
 }
 
-.website{
-    text-align: center;
+/*.map{
+    position: relative;
+    background: url(../hasici2.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}*/
+.interactive{
+    position: relative;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 0;
 }
- /*
- interaktivny obrazok:
- on hover
-  */
+
+.marker{
+    position: absolute;
+    background: yellow;
+    border-radius: 20px;
+    width: 20px;
+    height: 20px;
+
+}
+
+.marker:hover .frame{
+    text-align: center;
+    transform: translateX(25px) translateY(-200px);
+    visibility: visible;
+    border:1px solid black;
+    border-radius: 10px;
+    background-color: rgba(0,0,255,100%);
+    width: 500px;
+    height: 500px;
+    z-index: 4;
+}
+
+.marker .frame{
+    position: absolute;
+    visibility: hidden;
+}
+
+.marker .frame .img{
+    width: 50%;
+    height: 50%;
+}
+
+#marker1{
+    left:100px;
+    top:400px;
+}
+
+#marker2{
+    left:250px;
+    top:350px;
+}
+
+#marker3{
+    left:350px;
+    top:350px;
+}
+
+#marker4{
+    left:500px;
+    top:375px;
+}
+
+#marker5{
+    left:600px;
+    top:350px;
+}
