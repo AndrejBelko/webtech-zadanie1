@@ -254,17 +254,19 @@ li a:active{
 
 
 footer{
+    color:white;
+    font-size: 1em;
     border-radius: 10px;
     background-color: rgba(0,0,75,60%);
     text-align: center;
 }
 
-ul{
+footer ul{
     padding-inline-start: 0;
 }
 
 footer ul li a img{
-    width: 3%;
+    width: 50px;
 }
 
 .interactive{
