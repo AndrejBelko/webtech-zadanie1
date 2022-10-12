@@ -3,66 +3,160 @@
     src: url("CroissantOne-Regular.ttf");
 }
 
+@media only screen and (max-width: 1000px){
+    body{
+        background-image: none!important;
+        background-color: dimgrey;
+    }
+
+    body header{
+        font-size: 2vw;
+    }
+
+    body nav{
+        font-size: 1.5vw;
+    }
+
+    body .blocks h2{
+        font-size: 1vw;
+    }
+
+    .blocks .left{
+        width: 58%;
+        font-size: 1rem;
+    }
+
+    .blocks .left .ja{
+        width: 70%;
+    }
+
+    .blocks .right{
+        width: 60%;
+        font-size: 1rem;
+    }
+
+    body .blocks .left a{
+        font-size: 0.75em;
+    }
+
+    body .omne{
+        font-size: 0.8rem;
+    }
+
+    .omne .ja{
+        width: 50%;
+        height: 50%;
+    }
+
+    .omne .quote{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 2rem;
+        float:left
+    }
+
+    .marker:hover .frame{
+        font-size: 2vw;
+        width: 35vw;
+    }
+
+    body .frame img{
+        width:30vw;
+    }
+
+    body h2{
+        font-size: 1.2rem;
+        width: auto;
+    }
+
+}
+
+
 body{
-    background: url("../modern-city-skyline-backgrounds_77417-834.jpg");
-    background-repeat: space;
+    background-image: url("../images/modern-city-skyline-backgrounds_77417-834.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     font-family: CroissantOne, serif;
-    word-break: break-word;
     display: flex;
     flex-direction: column;
-    margin: 0;
 }
 
-.cv{
+
+.blocks{
+    word-break: break-word;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-column-gap: 1%;
+    font-size: 1vw;
+    grid-template-columns: 49% 49%;
+    grid-column-gap: 2%;
     grid-template-areas:
+            'cvHeader cvHeader'
             'cvLeft cvRight';
+    border-radius: 10px;
+    background-color: rgba(0,255,255,60%);
+    margin-bottom: 1%;
+    padding: 1%;
 }
 
-.left{
+.blocks h2{
+    grid-area: cvHeader;
+}
+
+.blocks .left{
+    font-size: 1vw;
     float: none;
     background-color: rgba(0, 255, 255, 60%);
     grid-area: cvLeft;
-    margin-left: 35%;
     text-align: center;
+    margin-left: 40%;
+    margin-right: 0;
 }
 
-.right{
+.blocks .right{
+    font-size: 1vw;
     padding-left: 1%;
     background-color: rgba(50, 205, 50, 60%);
     grid-area: cvRight;
-    margin-right: 35%;
+    margin-right: 40%;
+    margin-left: 0;
 }
 
-.right li{
+.blocks .right li{
     display: block;
 }
 
 aside.quote{
+    margin-bottom: 1%;
     float: right;
     text-align: center;
-    width: 50%;
-    font-size: xxx-large;
+    width: 40%;
+    font-size: 2vw;
     font-weight: bolder;
 }
 
 .ja{
     border-radius: 10px;
-    max-height: initial;
-    max-width: initial;
     float: left;
+    width: 15vw;
+    height: auto;
     margin-right: 1%;
+
 }
+
+
+.left .ja{
+    float:none;
+    height: auto;
+}
+
 
 header{
     border-radius: 10px;
-    background-color: rgba(0,0,139,60%);
+    background-color: rgba(0,0,75,60%);
     color:white;
     margin-bottom: 1%;
     text-align: center;
+    font-size: 1vw;
 }
 
 article{
@@ -73,8 +167,9 @@ article{
 }
 
 nav{
+    font-size: 0.9vw;
     border-radius: 10px;
-    background-color: rgba(0,0,255,60%);
+    background-color: rgba(0,0,175,60%);
     margin-bottom: 1%;
     text-align: center;
     display: inline;
@@ -86,30 +181,31 @@ li{
     margin: 1%;
 }
 
-a{
+li a{
     color:black;
 }
 
 
-a:visited{
+li a:visited{
     color: white;
 }
 
-a:hover{
+li a:hover{
     color: limegreen;
 }
 
-a:active{
+li a:active{
     color: deeppink;
 }
 
+
 .timetable{
     text-align: center;
-    font-size: medium;
+    font-size: 0.9vw;
     border-collapse: collapse;
     border: 1px solid black;
-    width: 90%;
-    height: auto;
+    width: 90vw;
+
     margin-left: auto;
     margin-right: auto;
     background-color: white;
@@ -117,28 +213,31 @@ a:active{
 
 .explanations{
     text-align: center;
+    font-size: 0.9vw;
     border: 1px solid black;
-    width: 20%;
-    height: 10%;
+    width: 20vw;
+    height: 1vh;
     margin-left: auto;
     margin-right: auto;
 }
 
-.timetable th,td{
+.timetable th,td {
     border: 1px solid black;
-    width: 6%;
+    width: 6vw;
 }
 
 .timetable .day{
     background-color: darkred;
-    height: 20%;
     color: white;
 }
 
 .timetable .time{
     background-color: darkred;
-    width: 6%;
     color: white;
+}
+
+.timetable tr:nth-of-type(even) {
+    background-color: lightgrey;
 }
 
 .seminar{
@@ -158,83 +257,105 @@ a:active{
     display: block;
 }
 
+
 footer{
     border-radius: 10px;
-    background-color: rgba(0,0,139,60%);
-    color:black;
-    margin-bottom: 1%;
+    background-color: rgba(0,0,75,60%);
     text-align: center;
 }
 
-/*.map{
-    position: relative;
-    background: url(../hasici2.jpg);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
-    z-index: 0;
-}*/
+ul{
+    padding-inline-start: 0;
+}
+
+footer ul li a img{
+    width: 3%;
+}
+
 .interactive{
     position: relative;
     float: none;
-    display: block;
     margin-right: auto;
     margin-left: auto;
-    z-index: 0;
+    padding-left: 14%;
+    padding-right: 14%;
 }
+
+
+.bcg{
+    width: 50vw;
+    height: auto;
+}
+
 
 .marker{
     position: absolute;
     background: yellow;
+    border: 1px solid black;
     border-radius: 20px;
-    width: 20px;
-    height: 20px;
-
+    width: 1.5vw;
+    height: 1.5vw;
 }
 
 .marker:hover .frame{
     text-align: center;
-    transform: translateX(25px) translateY(-200px);
+    transition: 1s all;
+    transform: translateY(2vh);
+    font-size: 1vw;
     visibility: visible;
     border:1px solid black;
+    color: white;
     border-radius: 10px;
-    background-color: rgba(0,0,255,100%);
-    width: 500px;
-    height: 500px;
-    z-index: 4;
+    background-color: rgba(0,0,255,70%);
+    width: auto;
+    height: auto;
+    z-index: 999;
 }
 
-.marker .frame{
+
+.frame{
     position: absolute;
     visibility: hidden;
+    left: -50px;
+    top: -300px;
+    padding: 1px;
 }
 
-.marker .frame .img{
-    width: 50%;
-    height: 50%;
+.frame img{
+    width: 20vw;
 }
 
 #marker1{
-    left:100px;
-    top:400px;
+    left:18vw;
+    top: 60%;
 }
 
 #marker2{
-    left:250px;
-    top:350px;
+    left:27vw;
+    top:57%;
 }
 
 #marker3{
-    left:350px;
-    top:350px;
+    left:36vw;
+    top:59%;
 }
 
 #marker4{
-    left:500px;
-    top:375px;
+    left:45vw;
+    top:56%;
 }
 
 #marker5{
-    left:600px;
-    top:350px;
+    left:50vw;
+    top:58%;
+}
+
+h2{
+    font-size: 1vw;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(0,0,255,60%);
+    margin-left: 30%;
+    margin-right: 30%;
 }
