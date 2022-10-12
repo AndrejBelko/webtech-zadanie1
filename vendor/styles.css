@@ -177,16 +177,16 @@ li{
 }
 
 li a{
-    color:black;
+    color: white;
 }
 
 
 li a:visited{
-    color: white;
+    color: lightgrey;
 }
 
 li a:hover{
-    color: limegreen;
+    color: yellowgreen;
 }
 
 li a:active{
@@ -255,7 +255,7 @@ li a:active{
 
 footer{
     color:white;
-    font-size: 1em;
+    font-size: 0.5em;
     border-radius: 10px;
     background-color: rgba(0,0,75,60%);
     text-align: center;
